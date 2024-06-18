@@ -1,11 +1,8 @@
 #include <stdio.h>
 
 /**
- *main - Print to standard io with newline added
- *
- *Decsription: print text with new line and return 0 on exit
- *main: print a text
- *return: 0
+ * main - print to standard output, add newline
+ * * Return: 0
  */
 
 int main(void)
