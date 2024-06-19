@@ -4,7 +4,7 @@
 /**
  * main - list out lower case alphabet
  *
- * Return 0 on success
+ * Return: 0 on success
  */
 
 int main(void)
