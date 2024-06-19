@@ -14,7 +14,7 @@ int main(void)
 	while (lowercap <= 'z')
 	{
 		if (lowercap != 'e' && lowercap != 'q')
-		{	
+		{
 			putchar(lowercap);
 		}
 		lowercap++;
