@@ -20,7 +20,7 @@ int main(void)
 	{
 		putchar(uppercap);
 		uppercap++;
-	}		
+	}
 	putchar('\n');
 	return (0);
 }
