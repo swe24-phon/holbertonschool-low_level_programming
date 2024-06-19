@@ -17,11 +17,10 @@ int main(void)
 		lowercap++;
 	}
 	while (uppercap <= 'Z')
-       	{
-                putchar(uppercap);
-                uppercap++;
+	{
+		putchar(uppercap);
+		uppercap++;
 	}		
-	
 	putchar('\n');
 	return (0);
 }
