@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * main - call _putchar to print characters
+ * print_alphabet - call _putchar to print the lower case alphabet
  *
  * Return: 0 on sucess
  *
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	int position_counter = 0;
+	char letter = 'a';
 
-	while (position_counter <= 26)
+	while (letter < 'z')
 	{
-	_putchar(print_alphabet());
-	position_counter++;
+	_putchar(letter);
+	letteri++;
 	}
 	_putchar('\n');
 	return (0);
