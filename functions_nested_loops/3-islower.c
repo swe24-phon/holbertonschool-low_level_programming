@@ -9,5 +9,5 @@
 
 int _islower(int letter)
 {
-	return(letter >= 97 && letter <= 122);
+	return (letter >= 97 && letter <= 122);
 }
