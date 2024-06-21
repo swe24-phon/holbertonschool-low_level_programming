@@ -10,5 +10,5 @@
 
 int _isalpha(int letter)
 {
-return (letter >= 97 && letter <= 122) || (letter >= 65 && letter <= 90);
+return ((letter >= 97 && letter <= 122) || (letter >= 65 && letter <= 90));
 }
