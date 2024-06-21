@@ -1,20 +1,22 @@
 #include "main.h"
+#define true 1;
+#define false 0;
 
 /**
  * islower - checking for the lowercase alphabet
+ *@letter : character to be checked
+ * Return: true on sucess
  *
- * Return: 0 on sucess
- *
- */_putchar('1');
+ */
 
-int _islower(int c)
+int _islower(int letter)
 {
 	if (c >= 97 && c <= 122)
 	{
-	       _putchar('1');
+		return(true);
 	}
 	else
 	{
-		_putchar('0');
+		return(false);
 	}
 }
