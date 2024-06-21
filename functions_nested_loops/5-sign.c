@@ -2,7 +2,7 @@
 
 /**
  * print_sign - checking the sign of a number
- *@i : character to be checked
+ *@n : number to be checked
  *
  * Return: true on sucess
  *
