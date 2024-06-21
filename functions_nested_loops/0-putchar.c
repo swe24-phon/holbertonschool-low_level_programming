@@ -11,7 +11,8 @@ int main(void)
 {
 	char str[] = { '_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\0' };
 	int position_counter = 0;
-	while ( position_counter < 8)
+
+	while (position_counter < 8)
 	{
 	_putchar(str[position_counter]);
 	position_counter++;
