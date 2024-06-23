@@ -24,7 +24,6 @@ void jack_bauer(void)
                         _putchar('\n');
 		}
 
-		{
                 while (hour_unit <= 3)
                 {
 		minute_tenth = 0;
@@ -41,12 +40,11 @@ void jack_bauer(void)
 			_putchar('\n');
 			minute_unit++;
 		}
-		}
 			minute_tenth++;	
 		}
 			hour_unit++;
 		}
 			hour_tenth++;
-	}
+	}	
 
 }
