@@ -14,7 +14,7 @@ void times_table(void)
 		while (multiply <= 9)
 		{
 			product = multipant * multiply;
-			if (multiply == 0) || (multipant == 0)
+			if ((multiply == 0) || (multipant == 0))
 			{
 				_putchar(ZERO + product);
 			}
