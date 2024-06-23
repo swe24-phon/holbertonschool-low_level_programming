@@ -1,4 +1,4 @@
-#ifndef MAIN_H_INCLUDED
+void jack_bauer(void)#ifndef MAIN_H_INCLUDED
 #define MAIN_H_INCLUDED
 
 int _putchar(char letter);
@@ -9,5 +9,6 @@ int _isalpha(int c);
 int print_sign(int n);
 int _abs(int n);
 int print_last_digit(int n);
+void jack_bauer(void);
 
 #endif
