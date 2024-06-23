@@ -16,17 +16,17 @@ void times_table(void)
 			product = multipant * multiply;
 			if ( product <= 9)
 			{
-				_putchar(result);
+				_putchar(ZERO + product);
 				_putchar(',');
 				_putchar(' ');
-				_putchar((' ');
+				_putchar(' ');
 			}
 			else
 			{
 				_putchar(ZERO + result/10);
 				_putchar(ZERO + result%10);
 				_putchar(',');
-				_putchar((' ');
+				_putchar(' ');
 			}
 				multiply++;
 		}
