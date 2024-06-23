@@ -1,5 +1,5 @@
 #include "main.h"
-#define ZERO 48;
+#define ZERO 48
 /**
  * jack_bauer - print out 24:00 hours
  *
