@@ -6,11 +6,12 @@
  */
 void times_table(void)
 {
-		int multipant, multiply = 0;
+		int multipant = 0;
 		int product;
 
 		while (multipant <= 9)
 		{
+			int multiply = 0;
 		while (multiply <= 9)
 		{
 			product = multipant * multiply;
