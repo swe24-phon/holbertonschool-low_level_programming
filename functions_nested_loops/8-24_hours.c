@@ -9,10 +9,10 @@
 
 void jack_bauer(void)
 {
-	int hour_tenth 49;
-	int hour_unit 49;
-	int minute_tenth 49;
-	int minute_unit 49;
+	int hour_tenth = 49;
+	int hour_unit = 49;
+	int minute_tenth = 49;
+	int minute_unit = 49;
 
 	{
 	_putchar(hour_tenth);
