@@ -1,7 +1,7 @@
 #include "main.h"
 #define ZERO 48
 /**
- * jack_bauer - print out 24:00 hours
+ * jack_bauer - print out timer in 24:00 hours format
  *
  */
 
@@ -19,7 +19,7 @@ void jack_bauer(void)
 		{
 			twofourhr_formatter = 3;
 		}
-
+		hour_unit = 0;
                 while (hour_unit <= twofourhr_formatter)
                 {
 		minute_tenth = 0;
