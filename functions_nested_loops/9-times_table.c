@@ -27,7 +27,7 @@ void times_table(void)
 			{
 				_putchar(ZERO + product/10);
 				_putchar(ZERO + product%10);
-			{
+			}
 			if (multiply < 9)
 			{
 				_putchar(',');
