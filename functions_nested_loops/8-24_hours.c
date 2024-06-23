@@ -3,8 +3,6 @@
 /**
  * jack_bauer - print out 24:00 hours
  *
- * Return: 0 on sucess
- *
  */
 
 void jack_bauer(void)
@@ -21,6 +19,5 @@ void jack_bauer(void)
 	_putchar(minute_tenth);
 	_putchar(minute_unit);
 	}	
-_putchar('\n');
-return (0);
+	_putchar('\n');
 }
