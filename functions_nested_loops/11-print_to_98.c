@@ -27,6 +27,6 @@ void print_to_98(int n)
 		}
 	}
 	else
-		print("98\n");
+		printf("98\n");
 			
 }
