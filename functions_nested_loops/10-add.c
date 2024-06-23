@@ -1,8 +1,10 @@
 #include "main.h"
 /**
- * add - add two number
+ * add - add two iinteger number
+ * @a: integer number
+ * @b: integer number
  *
- * Return on sucess
+ * Return: 0 on sucess
  *
  */
 
