@@ -1,5 +1,5 @@
 #include "main.h"
-#define ZERO = 0
+#define ZERO 48
 /**
  * times_table - print out 9 time table
  *
@@ -11,7 +11,7 @@ void times_table(void)
 		{			
 		while (multiply <= 10)
 		{
-			_putchar( ZERO + (nth_table * multiply));
+			_putchar(ZERO + (nth_table * multiply));
 			_putchar(',');
 			multiply++;
 		}	
