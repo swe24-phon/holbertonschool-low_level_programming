@@ -26,7 +26,7 @@ void jack_bauer(void)
 				while (minute_tenth <= 5)
 				{
 				minute_unit = 0;
-				while (minute_unit <= 9)
+					while (minute_unit <= 9)
 					{
 						_putchar(ZERO + hour_tenth);
 						_putchar(ZERO + hour_unit);
