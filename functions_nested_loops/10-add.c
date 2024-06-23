@@ -1,7 +1,8 @@
 #include "main.h"
-#define ZERO 48
 /**
- * jack_bauer - print out timer in 24:00 hours format
+ * add - add two number
+ *
+ * Return on sucess
  *
  */
 
