@@ -1,4 +1,4 @@
-void jack_bauer(void)#ifndef MAIN_H_INCLUDED
+#ifndef MAIN_H_INCLUDED
 #define MAIN_H_INCLUDED
 
 int _putchar(char letter);
