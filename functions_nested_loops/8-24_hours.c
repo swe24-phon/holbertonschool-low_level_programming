@@ -11,10 +11,10 @@ void jack_bauer(void)
 	int hour_unit;
 	int minute_tenth;
 	int minute_unit;
+	int twofourhr_formatter = 9;
 
 	while (hour_tenth <= 2)
 	{
-		int twofourhr_formatter = 9;
 		if (hour_tenth == 2)
 		{
 			twofourhr_formatter = 3;
