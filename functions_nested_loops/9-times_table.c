@@ -13,8 +13,8 @@ void times_table(void)
 		{
 		while (multiply <= 9)
 		{
-			result = row * col;
-			if ( result <= 9)
+			product = multipant * multiply;
+			if ( product <= 9)
 			{
 				_putchar(result);
 				_putchar(',');
