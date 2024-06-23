@@ -19,15 +19,15 @@ void times_table(void)
 			{
 				_putchar(ZERO + product);
 			}
-			else if ( product <= 9)
+			else if (product <= 9)
 			{
 				_putchar(' ');
 				_putchar(ZERO + product);
 			}
 			else
 			{
-				_putchar(ZERO + product/10);
-				_putchar(ZERO + product%10);
+				_putchar(ZERO + product / 10);
+				_putchar(ZERO + product % 10);
 			}
 			if (multiply < 9)
 			{
