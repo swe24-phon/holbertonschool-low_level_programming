@@ -6,16 +6,31 @@
  */
 void times_table(void)
 {
-		int nth_table, multiply = 0;
-		while (nth_table <= 9)
-		{			
-		while (multiply <= 10)
+		int multipant, multiply = 0;
+		int product;
+
+		while (multipant <= 9)
 		{
-			_putchar(ZERO + (nth_table * multiply));
-			_putchar(',');
-			multiply++;
-		}	
-		_putchar('\n');
-		nth_table++;	
+		while (multiply <= 9)
+		{
+			result = row * col;
+			if ( result <= 9)
+			{
+				_putchar(result);
+				_putchar(',');
+				_putchar(' ');
+				_putchar((' ');
+			}
+			else
+			{
+				_putchar(ZERO + result/10);
+				_putchar(ZERO + result%10);
+				_putchar(',');
+				_putchar((' ');
+			}
+				multiply++;
+		}
+				multipant++;
+				_putchar('\n');
 		}
 }
