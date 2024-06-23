@@ -14,11 +14,15 @@ void times_table(void)
 		while (multiply <= 9)
 		{
 			product = multipant * multiply;
-			if ( product <= 9)
+			if (product == 0)
 			{
 				_putchar(ZERO + product);
-				_putchar(',');
+			}
+			else if ( product <= 9)
+			{
 				_putchar(' ');
+				_putchar(ZERO + product);
+				_putchar(',');
 				_putchar(' ');
 			}
 			else
