@@ -6,7 +6,7 @@
 
 /**
  * _isupper - checking the input character is upper case
- *@c - chracter input
+ * @c - integer value input for a character
  *
  * Return: 1 for true else 0 for fault
  *
