@@ -2,7 +2,6 @@
 #include "main.h"
 
 #define ZERO 48
-#define NEW_LINE 13
 /**
  * print_numbers - print a sequence of 0 to 9
  *
@@ -18,6 +17,6 @@ void print_numbers(void)
 		_putchar(ZERO + counter);
 		counter++;
 	}
-	_putchar(NEW_LINE);
+	_putchar('/n');
 		
 }
