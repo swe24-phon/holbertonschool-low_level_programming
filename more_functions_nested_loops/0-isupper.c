@@ -15,7 +15,7 @@
 
 int _isupper(int c)
 {
-	if((c >= CAP_A) && (c <= CAP_Z))
+	if ((c >= CAP_A) && (c <= CAP_Z))
 	{
 		return (1);
 	}
