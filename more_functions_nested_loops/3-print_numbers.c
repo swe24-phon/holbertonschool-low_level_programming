@@ -18,5 +18,5 @@ void print_numbers(void)
 		counter++;
 	}
 	_putchar('\n');
-		
+
 }
