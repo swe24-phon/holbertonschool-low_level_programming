@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _isdigit - checking the input character is a number
+ * mul - multiply two numbers
  * @a : integer value input
  * @b : integer value input
  *
