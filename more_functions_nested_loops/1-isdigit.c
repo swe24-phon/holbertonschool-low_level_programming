@@ -2,7 +2,7 @@
 #include "main.h"
 
 #define ZERO 48
-#define NINE 90
+#define NINE 57
 
 /**
  * _isdigit - checking the input character is a number
