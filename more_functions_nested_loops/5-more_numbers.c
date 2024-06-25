@@ -3,7 +3,7 @@
 
 #define ZERO 48
 /**
- * print_most_numbers - print a sequence of 0 to 9, but not 2 and 4
+ * more_numbers - print a sequence of 0 to 14
  *
  */
 
@@ -17,7 +17,7 @@ void more_numbers(void)
 	{
 		counter = 0;
 		while (counter <= 14)
-		{	
+		{
 			if (counter > 9)
 			{
 				_putchar(ZERO + counter / 10);
