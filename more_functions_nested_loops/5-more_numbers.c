@@ -10,19 +10,22 @@
 
 void more_numbers(void)
 {
-	int unit, tenth;
+	int counter;
 	int row = 0;
 
 	while (row < 10)
 	{
-	while (tenth < 1)
-	{
-		unit = 0;
-		while (unit < 9)
+		counter = 0;
+		while (counter <= 14)
 		{	
-			_putchar(ZERO + unit);
-			unit++;
-	}
+			if ( counter > 9)
+			{
+				_putchar(ZERO + counter / 10);
+			}
+			_putchar(ZERO + counter % 10);
+			counter++;
+		}
 	_putchar('\n');
 	row++;
+	}
 }
