@@ -3,6 +3,7 @@
 
 /**
  *  print_line - print a line with length n
+ *@n : integer number for line length
  *
  */
 
