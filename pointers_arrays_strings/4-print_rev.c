@@ -11,7 +11,8 @@
 
 void print_rev(char *s)
 {
-	int length, rev = 0;
+	int length = 0;
+	int rev;
 
 	while (*s != '\0')
 	{
