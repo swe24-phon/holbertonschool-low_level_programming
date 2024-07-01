@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _puts2 - print every other character
+ * puts2 - print every other character
  *
  * @str: string of char pointer
  *
