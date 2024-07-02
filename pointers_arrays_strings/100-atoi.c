@@ -18,15 +18,17 @@ int _atoi(char *s)
     int sign = 1;
     int digit;
 
-    while (*s == ' ' || !(*s >= '0' && *s <= '9') || (*s == '-'))
+    while (*s)
     {
     if (*s == '-')
     {
         sign = -1;
     }
-        s++;
-    }
-    while (*s >= '0' && *s <= '9')
+    else if (*s == ' ' || !(*s >= '0' && *s <= '9'))
+		    {
+		    	result = 0;
+		    }
+    else if (*s >= '0' && *s <= '9')
     {
         digit = *s - '0';
         if (result > (INT_MAX - digit) / 10)
@@ -34,14 +36,8 @@ int _atoi(char *s)
             return (sign == 1) ? INT_MAX : INT_MIN;
         }
         result = result * 10 + digit;
-        s++;
     }
-    if (result == 0)
-    {
-	    return (0);
+	s++;
     }
-    else
-    {
-	    return result * sign;
-    }
+	return (result * sign);
 }
