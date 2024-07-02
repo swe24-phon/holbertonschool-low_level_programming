@@ -1,26 +1,52 @@
 #include <stdio.h>
 #include "main.h"
 
+#include <limits.h>
+
 /**
- * _strcpy - copy string
- *
- * @dest: destination to copy to
- * @src: orginal source
- *
- * Return: 0 on sucess
- *
- */
+*
+* _atoi - convert text to digit
+*
+*@s: string of text
+*
+*Return: result
+*/
 
 int _atoi(char *s)
 {
-	int i = 0;
-	int neg = 1;
+    int result = 0;
+    int sign = 1;
+    int digit;
 
-	while (s[i] != '\0')
+    while (*s == ' ' && !(*s >= '0' && *s <= '9'))
+    {
+        s++;
+    }
+    if (*s == '-')
+    {
+        sign = -1;
+        s++;
+    }
+    else if (*s == '+')
+    {
+        s++;
+    }
+    while (*s >= '0' && *s <= '9')
+    {
+        digit = *s - '0';
+        if (result > (INT_MAX - digit) / 10)
 	{
-		if (s[i] == 45)
-			neg *= -1;
-		if (s[i] >= 48 && s[i] <= 57)
-	}
-	return (0);
+            return (sign == 1) ? INT_MAX : INT_MIN;
+        }
+        result = result * 10 + digit;
+        s++;
+    }
+    if (result == 0)
+    {
+	    return (0);
+    }
+    else
+    {
+	    return result * sign;
+    }
 }
