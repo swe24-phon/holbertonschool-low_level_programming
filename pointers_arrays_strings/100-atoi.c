@@ -18,17 +18,12 @@ int _atoi(char *s)
     int sign = 1;
     int digit;
 
-    while (*s == ' ' || !(*s >= '0' && *s <= '9'))
+    while (*s == ' ' || !(*s >= '0' && *s <= '9') || (*s == '-'))
     {
-        s++;
-    }
     if (*s == '-')
     {
         sign = -1;
-        s++;
     }
-    else if (*s == '+')
-    {
         s++;
     }
     while (*s >= '0' && *s <= '9')
