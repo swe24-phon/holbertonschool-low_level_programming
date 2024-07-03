@@ -13,7 +13,7 @@ char *leet(char *s)
 {
 	int i, j;
 	char *drp = "aAeEoOtTlL";
-	char *crp = "4433007712";
+	char *crp = "4433007711";
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
