@@ -16,7 +16,7 @@ char *_strncpy(char *dest, char *src, int n)
 	char *result = dest;
 	int len = 0;
 
-	while (*src)
+	while (*dest)
 	{
 		if (len < n)
 		{
