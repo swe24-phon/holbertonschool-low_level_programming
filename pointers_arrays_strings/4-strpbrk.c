@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * m_strpbr - check the code
+ * _strpbr - check the code
  *
  * @s: string
  * @accept: pattern to search for
