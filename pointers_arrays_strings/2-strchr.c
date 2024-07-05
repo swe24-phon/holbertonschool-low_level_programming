@@ -24,5 +24,6 @@ char *_strchr(char *s, char c)
 		s++;
 		i++;
 	}
+	s--;
 	return (NULL);
 }
