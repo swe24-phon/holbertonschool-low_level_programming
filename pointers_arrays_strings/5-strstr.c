@@ -7,32 +7,31 @@
  * @haystack: string 1
  * @needle: string 2
  *
- * Return: Always 0.
+ * Return: Pointer to the first occurrence of the substring, or NULL
  */
 
 char *_strstr(char *haystack, char *needle)
 {
-	char *h = haystack;
-	char *n = needle;
+	char *h, *n;
 
-	while (*h)
+	if (*needle == '\0')
 	{
-		if (*h == *n)
-		{
-			char *temp_h = h;
-			char *temp_n = n;
+		return (haystack);
+	}
+	for (; *haystack != '\0'; haystack++)
+	{
+		h = haystack;
+		n = needle;
 
-			while (*temp_n != '\0' && *temp_h == *temp_n)
-			{
-				temp_h++;
-				temp_n++;
-			}
-			if (*temp_n == '\0')
-			{
-				return (h);
-			}
-			h++;
-		}
+	while (*h == *n && *n != '\0')
+	{
+		h++;
+		n++;
+	}
+	if (*n == '\0')
+	{
+		return (haystack);
+	}
 	}
 	return (NULL);
 }
