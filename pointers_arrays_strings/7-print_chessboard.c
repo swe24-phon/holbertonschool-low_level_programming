@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * print_chessboard - check the code
  *
  * @a: matrix arrayi
  */
