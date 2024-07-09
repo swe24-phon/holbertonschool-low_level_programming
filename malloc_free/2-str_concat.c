@@ -17,6 +17,8 @@ char *str_concat(char *s1, char *s2)
 	char *joinptr;
 	unsigned int s1len = 0, s2len = 0, i = 0, totallen = 0;
 
+	while(*s1 && *s2)
+	{
 	if (s1 == NULL)
 		return ("");
 	if (s2 == NULL)
@@ -38,4 +40,6 @@ char *str_concat(char *s1, char *s2)
 		joinptr[i] = s2[i - s1len];
 	joinptr[totallen] = '\0';
 	return (joinptr);
+	}
+	return (NULL);
 }
