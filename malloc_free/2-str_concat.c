@@ -16,7 +16,7 @@ char *str_concat(char *s1, char *s2)
 {
 	char *joinptr;
 	unsigned int s1len = 0, s2len = 0, i = 0, totallen = 0;
-	
+
 	char empty[] = "";
 
 	if (!s1)
