@@ -18,8 +18,11 @@ char *str_concat(char *s1, char *s2)
 	unsigned int s1len = 0, s2len = 0, i = 0, totallen = 0;
 	
 	char empty[] = "";
-	if (!s1) s1 = empty;
-	if (!s2) s2 = empty;
+
+	if (!s1)
+		s1 = empty;
+	if (!s2)
+		s2 = empty;
 
 	while (s1[s1len])
 		s1len++;
