@@ -3,8 +3,8 @@
 /**
  * main - main program
  *
- * @argc - command count
- * @argv - actual command
+ * @argc: command count
+ * @argv: actual command
  *
  * Return: 0 for sucess
  */
