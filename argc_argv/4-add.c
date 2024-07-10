@@ -21,7 +21,7 @@ void add_positive_numbers(int argc, char *argv[])
 		if (number <= 0)
 		{
 			printf("Error\n");
-			exit (1);
+			exit(1);
 		}
 		sum += number;
 	}
