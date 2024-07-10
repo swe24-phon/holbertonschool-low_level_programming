@@ -19,11 +19,8 @@ int main(int argc, char *argv[])
 		printf("Error");
 		return (1);
 	}
-	else
-	{
-		result = atoi(argv[2]) * atoi(argv[1]);
-		printf("%d\n", result);
-	}
+	result = atoi(argv[2]) * atoi(argv[1]);
+	printf("%d\n", result);
 	return (0);
 }
 
