@@ -15,13 +15,15 @@ void add_positive_numbers(int argc, char *argv[])
 	int i, sum = 0;
 	int number;
 
+	if (argc != 3)
+		return (1);
 	for (i = 1; i < argc; i++)
 	{
 		number = atoi(argv[i]);
 		if (number <= 0 || number >= 9)
 		{
 			printf("Error\n");
-			exit(1);
+			return (1);
 		}
 		sum += number;
 	}
