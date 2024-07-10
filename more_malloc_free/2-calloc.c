@@ -5,39 +5,25 @@
 /**
  * string_nconcat - concatenate 2 strings
  *
- * @s1: string 1
- * @s2: string 2
- * @n: s2's characters to join with s1
+ * @nmemb: number of elements in the array
+ * @size: bytes size of each element
  *
- * Return: ptr on sucess
+ * Return: arr on sucess
  */
 
-char *string_nconcat(char *s1, char *s2, unsigned int n)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *joinptr;
-	unsigned int s1len = 0, s2len = 0, i = 0, totallen = 0;
+	unsigned int zeros;
+	int *arr;
 
-	if (s1 == NULL)
-		return ("");
-	if (s2 == NULL)
-		return ("");
-
-	while (s1[s1len])
-		s1len++;
-	while (s2[s2len])
-		s2len++;
-	if (n < s2len)
-		s2len = n;
-
-	totallen = s1len + s2len;
-
-	joinptr = malloc((totallen + 1) * sizeof(char));
-	if (joinptr == NULL)
+	arr = malloc(size * (sizeof(int)));
+	if (arr == NULL)
+	{
 		return (NULL);
-	for (i = 0; i < s1len; i++)
-		joinptr[i] = s1[i];
-	for (i = s1len; i < totallen; i++)
-		joinptr[i] = s2[i - s1len];
-	joinptr[totallen] = '\0';
-	return (joinptr);
+	}
+	for (zeros = 0; zeros < nmemb; zeros++)
+	{
+	       arr[zeros] = 0;
+	}
+	return (arr);
 }
