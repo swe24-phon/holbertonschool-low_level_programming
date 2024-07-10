@@ -18,7 +18,7 @@ void add_positive_numbers(int argc, char *argv[])
 	for (i = 1; i < argc; i++)
 	{
 		number = atoi(argv[i]);
-		if (number <= 0)
+		if (number <= 0 || number >= 9)
 		{
 			printf("Error\n");
 			exit(1);
