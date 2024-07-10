@@ -16,14 +16,14 @@ void add_positive_numbers(int argc, char *argv[])
 	int number;
 
 	if (argc != 3)
-		return (1);
+		exit (1);
 	for (i = 1; i < argc; i++)
 	{
 		number = atoi(argv[i]);
 		if (number <= 0 || number >= 9)
 		{
 			printf("Error\n");
-			return (1);
+			exit (1);
 		}
 		sum += number;
 	}
