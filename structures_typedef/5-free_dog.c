@@ -4,7 +4,7 @@
 
 /**
  * free_dog - free memory
- *
+ *@d: dog to free
  */
 
 void free_dog(dog_t *d)
