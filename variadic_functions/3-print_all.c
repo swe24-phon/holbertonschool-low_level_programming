@@ -12,6 +12,7 @@
 void print_all(const char * const format, ...)
 {
 	int n = 0;
+	char *str;
 	const char *selector = format;
 
 	va_list list;
