@@ -11,20 +11,37 @@
 
 void print_all(const char * const format, ...)
 {
-	va_list list;
-	unsigned int i;
-	char *str;
+	int n = 0;
+	const char *selector = format;
 
-	va_start(list, n);
-	for (i = 0; i < n; i++)
+	va_list list;
+
+	va_start(list, format);
+	
+	while (*selector != '\0')
 	{
-		str = va_arg(list, char *);
-		if (str == NULL)
-			str = "(nil)";
-		printf("%s", str);
-		if (i != (n - 1) && separator != NULL)
-			printf("%s", separator);
+		switch (*selector){
+			case'c':
+        	                printf("%c", va_arg(list, int)), n++;
+                	        break;
+			case 'i':
+				printf("%d", va_arg(list, int)), n++;
+				break;
+			case 'f':
+				printf("%f", va_arg(list, double)), n++;
+				break;
+			case 's':
+				str = va_arg(list, char *), n++;
+				if (!str)
+				{
+					printf("(nil)");
+					break;
+				}
+				printf("%s", str);
+				break;			
+				}
 	}
+
 	va_end(list);
 	printf("\n");
 }
