@@ -11,7 +11,6 @@
 
 void print_all(const char * const format, ...)
 {
-	char *str;
 	const char *selector = format;
 
 	va_list list;
@@ -32,7 +31,7 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(list, double));
 				break;
 			case 's':
-		i		str = va_arg(list, char *);
+				char *str = va_arg(list, char *);
 		                printf("%s", str ? str : "(nil)");				
 				break;
 			default:
