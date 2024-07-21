@@ -39,7 +39,8 @@ void print_all(const char * const format, ...)
 					break;
 				}
 			default:
-				break;
+				selector++;
+				continue;
 		}
 		selector++;
 		if (*(selector) != '\0')
