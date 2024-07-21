@@ -19,28 +19,32 @@ void print_all(const char * const format, ...)
 
 	va_start(list, format);
 	
-	while (*selector != '\0')
+	while (selector && *selector != '\0')
 	{
-		switch (*selector){
+		switch (*selector)
+		{
 			case'c':
-        	                printf("%c", va_arg(list, int)), n++;
+        	                printf("%c", va_arg(list, int));
                 	        break;
 			case 'i':
-				printf("%d", va_arg(list, int)), n++;
+				printf("%d", va_arg(list, int));
 				break;
 			case 'f':
-				printf("%f", va_arg(list, double)), n++;
+				printf("%f", va_arg(list, double));
 				break;
 			case 's':
-				str = va_arg(list, char *), n++;
-				if (!str)
-				{
+				str = va_arg(list, char *);
+				if (str)
+					printf("%s", str);
+				else
 					printf("(nil)");
-					break;
-				}
-				printf("%s", str);
+				break;
+			default:
 				break;			
-				}
+		}
+		selector++;
+		if (*(selector) != '\0')
+			printf(", ");
 	}
 
 	va_end(list);
