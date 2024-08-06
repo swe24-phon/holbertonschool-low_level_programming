@@ -6,7 +6,7 @@
  *
  * @n: integer pointer
  * @index: desired position
- * Return: integer number
+ * Return: 0 on success, -1 if index is out of bounds
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
@@ -15,5 +15,6 @@ int set_bit(unsigned long int *n, unsigned int index)
 		*n |= 1UL << index;
 		return (0);
 	}
-	return (*n);
+	else
+		return (-1);
 }
