@@ -8,7 +8,6 @@
  *@m: interger number
  * Return: interger of flip bit
  */
-
 unsigned int flip_bits(unsigned long n, unsigned long m)
 {
 	unsigned int count = 0;
@@ -16,10 +15,10 @@ unsigned int flip_bits(unsigned long n, unsigned long m)
 
 	if ((n >> 31) != (m >> 31))
 		count++;
-	for (i = 30; i >= 0; i--)
+	for (i = 0; i < 32; i++)
 	{
-		if (((n >> i) & 1) != ((m >> i) & 1))
-			count++;
+	if (((n >> i) & 1) != ((m >> i) & 1))
+		count++;
 	}
 	return (count);
 }
