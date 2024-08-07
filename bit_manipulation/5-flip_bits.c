@@ -11,14 +11,19 @@
 unsigned int flip_bits(unsigned long n, unsigned long m)
 {
 	unsigned int count = 0;
-	int i;
+	unsigned int i, nbit, mbit;
 
 	if ((n >> 31) != (m >> 31))
 		count++;
-	for (i = 0; i < 32; i++)
+
+	for (i = 0; i < sizeof(unsigned long) * 8; i++)
 	{
-	if (((n >> i) & 1) != ((m >> i) & 1))
+		nbit = (n >> i) & 1;
+		mbit = (m >> i) & 1;
+
+	if (nbit != mbit)
 		count++;
 	}
+
 	return (count);
 }
