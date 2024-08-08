@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * create_file - create a text file and prints it to POSIX stdout
+ * @filename: The name of the file to read
+ * @text_content: The number of letters to read and print
+ *
+ * Return: The actual number of letters read and printed, or 0 on failure
+ */
+
 int create_file(const char *filename, char *text_content)
 {
 	int fd;
