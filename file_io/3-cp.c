@@ -64,7 +64,7 @@ int main(int argc, char **argv)
 	file_from = argv[1];
 
 	fd_from = open(file_from, O_RDONLY);
-	fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0644);
+	fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 
 	if (fd_from == -1 || fd_to == -1) {
 		print_error_and_exit("Error: Can't open file");
