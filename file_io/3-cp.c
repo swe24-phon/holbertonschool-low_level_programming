@@ -77,9 +77,6 @@ int main(int argc, char **argv)
 	if (bytes_read == -1) {
 		print_error_and_exit("Error reading from file");
 	}
-
 	close_files(fd_from, fd_to);
-
-	dprintf(STDOUT_FILENO, "Success!\n");
 	return 0;
 }
